@@ -1,0 +1,13 @@
+@use '@gyugyu/assert-sass' as assert;
+@use './functions';
+
+@function test-passed-map-is-not-polluted() {
+  $map: (
+    a: 1,
+    b: 'foo',
+    c: true
+  );
+  $result: functions.pick($map, a c);
+  $assert: assert.equals($result, (a: 1, c: true));
+  @return assert.equals($map, (a: 1, b: 'foo', c: true));
+}

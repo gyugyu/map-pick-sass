@@ -1,0 +1,14 @@
+@use 'sass:list';
+@use 'sass:map';
+
+@function pick($map, $paths) {
+  $keys: map.keys($map);
+
+  @each $key in $keys {
+    @if list.index($paths, $key) == null {
+      $map: map.remove($map, $key);
+    }
+  }
+
+  @return $map;
+}

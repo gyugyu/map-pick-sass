@@ -1,0 +1,32 @@
+{
+  "name": "@gyugyu/map-pick-sass",
+  "version": "0.1.0",
+  "description": "Picking key, value from map value (Dart Sass module)",
+  "scripts": {
+    "test": "sassunit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/gyugyu/map-pick-sass.git"
+  },
+  "keywords": [
+    "sass",
+    "scss",
+    "map",
+    "pick"
+  ],
+  "author": "Yusuke Yagyu <yu@hoaxster.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gyugyu/map-pick-sass/issues"
+  },
+  "homepage": "https://github.com/gyugyu/map-pick-sass#readme",
+  "devDependencies": {
+    "@gyugyu/assert-sass": "^0.1.2",
+    "@gyugyu/sassunit": "^0.2.0",
+    "sass": "^1.32.11"
+  },
+  "peerDependencies": {
+    "sass": "^1.32.11"
+  }
+}
